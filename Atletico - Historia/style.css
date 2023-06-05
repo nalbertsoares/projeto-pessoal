@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300;400;600&display=swap');
+
+*{margin: 0; padding: 0;}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 28vh 300vh 10vh;
+    background-color: rgb(187, 187, 187);
+    width: 100%;
+    font-family: 'Changa', sans-serif;
+}
+
+header{
+    grid-column-start: 1;
+    grid-column-end: 9;
+    background-color: black;
+    margin: 1%;
+    border: 1px solid black;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+#nalsports{
+    font-size: 3.4em;
+    margin-top: 1%;
+}
+
+nav{
+    display: inline;
+    background-color: white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+a{
+    font-size: 1.3em;
+    color: black;
+}
+
+main{
+    background-color: rgb(187, 187, 187);
+    grid-column-start: 2;
+    grid-column-end: 8;
+    margin: 1%;
+    margin-top: 3%;
+}
+
+.atletico{
+    background-image: url(escudo-atletico.png);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 0;
+}
+
+main h1{
+    font-size: 2.5em;
+    text-align: center;
+}
+
+main p{
+    margin-top: 2%;
+    margin-bottom: 5%;
+    font-size: 1.8em;
+    text-align: justify;
+}
+
+footer{
+    grid-column-start: 1;
+    grid-column-end: 9;
+    margin: 1%;
+    height: 10vh;
+    background-color: black;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background-color:  rgb(187, 187, 187);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: black;
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+    background-color: gray;
+  }
+
+
+@media screen and (max-width: 768px) {
+    
+    main{
+        grid-column-start: 1;
+        grid-column-end: 9;
+        margin: 4%;
+        height: 180vh;
+    }
+
+    .atletico{
+        background-image: url(escudo-atletico.png);
+        background-size: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 70vh;
+        padding: 0;
+    }
+
+    main h1{
+        font-size: 2.5em;
+        text-align: center;
+    }
+    
+    main p{
+        margin-top: 2%;
+        margin-bottom: 5%;
+        font-size: 1.8em;
+    }
+
+    footer{
+        margin-top: 150%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    header{
+        height: 25vh;
+    }
+
+    #nalsports{
+        margin-top: 5%;
+    }
+
+    .atletico{
+        background-image: url(escudo-atletico.png);
+        background-size: 80%;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 55vh;
+        padding: 0;
+    }
+
+    main h1{
+        font-size: 2.2em;
+        text-align: center;
+    }
+
+    main p{
+        margin-top: 2%;
+        margin-bottom: 5%;
+        font-size: 1.3em;
+        text-align: justify;   
+    }
+
+    footer{
+        margin-top: 200%;
+        height: 10vh;
+    }
+}
